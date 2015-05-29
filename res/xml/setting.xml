@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/biz_setting_category_account" >
+        <Preference
+            android:icon="@drawable/icon"
+            android:key="pref_my_account_key"
+            android:title="@string/biz_setting_account_my" />
+        <Preference
+            android:icon="@drawable/icon"
+            android:key="pref_other_account_key"
+            android:title="@string/biz_setting_account_other" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/biz_setting_category_application" >
+        <Preference
+            android:icon="@drawable/icon"
+            android:key="pref_text_size_key"
+            android:title="@string/biz_setting_application_text_size" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/icon"
+            android:key="pref_push_setting_key"
+            android:title="@string/biz_setting_application_push" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/icon"
+            android:key="autopost"
+            android:title="@string/biz_setting_application_offline" />
+
+        <SwitchPreference
+            android:icon="@drawable/icon"
+            android:key="pref_no_picture_key"
+            android:title="@string/biz_setting_application_no_picture" />
+
+        <Preference
+            android:icon="@drawable/icon"
+            android:key="pref_clear_cache_manually_key"
+            android:title="@string/biz_setting_application_clear_cache_manually" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/biz_setting_category_plugin" >
+        <Preference
+            android:icon="@drawable/icon"
+            android:key="pref_plugin_management_key"
+            android:title="@string/biz_setting_category_plugin" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/biz_setting_other_settings" >
+        <Preference
+            android:icon="@drawable/icon"
+            android:key="pref_other_fresh_guide_key"
+            android:title="@string/biz_setting_other_fresh_guide" />
+        <Preference
+            android:icon="@drawable/icon"
+            android:key="pref_other_about_key"
+            android:title="@string/biz_setting_other_about" />
+        <Preference
+            android:icon="@drawable/icon"
+            android:key="pref_other_feedback_key"
+            android:title="@string/biz_setting_other_feedback" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

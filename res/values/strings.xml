@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Spark</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="guide_one">引导1</string>
+    <string name="guide_two">引导2</string>
+    <string name="guide_three">引导3</string>
+    <string name="guide_end">引导结束</string>
+    <string name="btn_close_guide">开始体验</string>
+    <string name="is_positive">确定</string>
+	<string name="login_tv1">如果您没有账号，请点击此处</string>
+	<string name="login_tv2">注册</string>
+	<string name="login_tv3">邮箱/手机号</string>
+	<string name="login_tv4">输入密码</string>
+	<string name="login_tv5">忘记密码？</string>
+	<string name="login_tv6">确定密码</string>
+</resources>

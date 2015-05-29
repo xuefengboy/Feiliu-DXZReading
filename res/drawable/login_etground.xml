@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 整体的背景，这里设置为白色 -->
+    <solid android:color="@color/white" />
+    <!-- 边框的颜色 -->
+    <stroke
+        android:width="0.01dp"
+        android:color="@color/white" />
+    <!-- 如果项目中已经设置了padding,不需要加这个padding -->
+    <!--
+         <padding  
+        android:bottom="1dp"  
+        android:left="0.5dp"  
+        android:right="0.5dp"  
+        android:top="0.5dp" />
+    -->
+    <corners
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp"
+        android:topLeftRadius="8dp"
+        android:topRightRadius="8dp" />
+</shape>

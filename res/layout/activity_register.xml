@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:orientation="vertical" >
+
+    <!-- 注册 -->
+
+    <ImageView
+        android:id="@+id/register_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#0000EE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/register_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/register_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机注册"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/register_tv_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱注册"
+                android:textColor="#3A5FCD" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/fl_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <!-- 手机注册 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="输入你的手机号码"
+                        android:textColor="#3A5FCD"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="您将收到验证身份的短信，该手机号码仅供注册使用，其他用户无权查看您的手机号码。"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_ground"
+                    android:orientation="horizontal"
+                    android:padding="2dp" >
+
+                    <EditText
+                        android:id="@+id/register_phone_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:autoText="true"
+                        android:background="@drawable/register_etground"
+                        android:hint="请输入手机号"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/register_phone_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/register_sms" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+
+            android:id="@+id/fl_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+            
+              <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_ground"
+                    android:orientation="horizontal"
+                    android:padding="2dp" >
+
+                    <EditText
+                        android:id="@+id/register_youx_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoText="true"
+                        android:background="@drawable/register_etground"
+                        android:hint="请输入邮箱                                                                 "
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            	<LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_ground"
+                    android:orientation="horizontal"
+                    android:padding="2dp" >
+
+                    <EditText
+                        android:id="@+id/register_youx_word"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:autoText="true"
+                        android:background="@drawable/register_etground"
+                        android:hint="请输入密码                                                                   "
+                        android:singleLine="true"
+                        android:password="true"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+             <ImageView
+                 android:id="@+id/register_end"
+                 android:layout_width="100dp"
+                 android:layout_height="45dp"
+                 android:layout_marginTop="20dp"
+                 android:src="@drawable/register" />
+                 </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

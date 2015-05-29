@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1.android:descendantFocusability：ViewGroup阻止其子View接收焦点 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newslist_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/list_item_background"
+    android:descendantFocusability="blocksDescendants"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/newslist_item_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_placeholder_wait_for_image" />
+
+    <RelativeLayout
+        android:id="@+id/newslist_item_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/newslist_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="新闻标题 "
+            android:textColor="@color/newslist_item_title_selector"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/newslist_item_digest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newslist_item_title"
+            android:layout_marginTop="2.0dip"
+            android:ellipsize="end"
+            android:lines="2"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="摘要..."
+            android:textColor="@color/newslist_item_digest_selector"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@+id/newslist_item_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/newslist_item_digest"
+            android:layout_marginTop="10.0dip"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="来源：中国新闻网"
+            android:textColor="@color/newslist_item_source_selector"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:id="@+id/newslist_item_ptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/newslist_item_source"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2.0dip"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="5分钟前"
+            android:textColor="@color/newslist_item_source_selector"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+
+</LinearLayout>
